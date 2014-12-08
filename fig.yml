@@ -1,0 +1,7 @@
+web:
+  build: .
+  command: ["/bin/bash", "-l", "-c", "ruby app.rb"]
+  volumes:
+    - .:/myapp
+  ports:
+    - "8000:4567"
